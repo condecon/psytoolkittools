@@ -11,6 +11,6 @@ RoxygenNote: 7.2.3
 Suggests: 
     testthat (>= 3.0.0)
 Imports:
-  cli, glue, reticulate, stringr
+  cli, glue, reticulate, stringr, readr (>= 2.1.4)
 LinkingTo: cpp11
 SystemRequirements: C++11

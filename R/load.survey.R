@@ -7,7 +7,7 @@ unzip_tool = function(file_path){
 
 #load survey
 load_survey_awnsers = function(){
-  awnsers = read.csv(glue::glue("psy_data\\data.csv"))
+  awnsers = readr::read_csv(glue::glue("psy_data\\data.csv"))
   return(awnsers)
 }
 
