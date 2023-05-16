@@ -1,0 +1,14 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Rbuildignore
+.DS_Store
+src/*.o
+src/*.so
+src/*.dll
+src/*.pdb
+.vscode/
+renv.lock
+psy_data/
+inst/python/__pycache__/
