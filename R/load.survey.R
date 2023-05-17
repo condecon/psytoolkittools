@@ -84,7 +84,8 @@ load.survey = function(filename){
   unzip_tool(filename)
   
   awnsers = load_survey_awnsers()
-  awnsers = parse_survey(awnsers)
+  #awnsers = parse_survey(awnsers)
   
   return(awnsers)
 }
+
