@@ -33,13 +33,13 @@ For example:
 library(psytoolkittools)
 data <- load.survey("data.zip")
 ```
-The function returns a data frame with the survey awnsers.
-A folder called "psy_data" is created. Do not delete this folder as it is nessecary for loading experiment data.
+The function returns a data frame with the survey answers.
+A folder called "psy_data" is created. Do not delete this folder as it is necessary for loading experiment data.
 
 ### Loading Experiment Data
 To easily load the experiment data, the package provides the `load.experiment.data()` function.
 This functions requires two arguments:
-- Column with the experiment data filenames
+- Column with the experiment data file names
 - Vector of strings which correspond to the structure of the saved experiment data
 
 The function returns a data frame which can be combined with the survey data frame by passing it to the function.
@@ -50,7 +50,7 @@ load.experiment.data(experiment.file.names, label.structure, merge.dataframe = s
 # Utilities
 
 ## `recode.keys`
-In PsyToolkit, when saving keys, the pressed key itself is not saved instead the position in which the key was definied is saved.
+In PsyToolkit, when saving keys, the pressed key itself is not saved instead the position in which the key was defined is saved.
 For further analysis, it can be helpful to reverse the saved value to the name of the original key that has been pressed by the participant.
 In this case `recode.keys()` can be used.
 The function takes to parameters. The first is the vector or column that shall be recoded. The second parameter is a vector of characters in which the characters are in the same line up than in the experiment code.
