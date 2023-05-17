@@ -16,7 +16,7 @@ recode.status(status_vector, correct = 1, error = 0, timeout = NA)
 \item{timeout}{Numeric value which indicates a timeout.}
 }
 \value{
-numeric vector
+numeric
 }
 \description{
 This function recodes the status variable to custom values.
