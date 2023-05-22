@@ -10,7 +10,7 @@ recode.keys(vector, keys)
 \item{vector}{A vector of key values}
 
 \item{keys}{A vector of keys. Those keys have to be in the same order than
-in your experiment.}
+in your experiment code.}
 }
 \value{
 numeric

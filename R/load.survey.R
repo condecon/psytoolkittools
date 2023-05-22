@@ -6,8 +6,9 @@ unzip_tool = function(file_path){
 }
 
 #load survey
+#' @importFrom "readr" "read_csv"
 load_survey_awnsers = function(){
-  awnsers = read.csv(glue::glue("psy_data\\data.csv"))
+  awnsers = readr::read_csv(glue::glue("psy_data\\data.csv"))
   return(awnsers)
 }
 
@@ -62,11 +63,11 @@ parse_survey = function(awnsers){
     survey_radio_index = append(res, survey_radio_index)
   }
   
-  
+  #####CURRENTLY DEACTIVATED, WILL BE IMPLEMENTED IN FUTURE VERSIONS
   #convert columns which are "radio" questions to factors
-  for(i in c(1:length(survey_radio_index))){
-    awnsers[,survey_radio_index[i]] = as.factor(awnsers[,survey_radio_index[i]])
-  }
+  #for(i in c(1:length(survey_radio_index))){
+  #  awnsers[,survey_radio_index[i]] = as.factor(awnsers[,survey_radio_index[i]])
+  #}
   
   
   return(awnsers)
@@ -84,7 +85,8 @@ load.survey = function(filename){
   unzip_tool(filename)
   
   awnsers = load_survey_awnsers()
-  awnsers = parse_survey(awnsers)
+  #awnsers = parse_survey(awnsers)
   
   return(awnsers)
 }
+

@@ -12,3 +12,4 @@ src/*.pdb
 renv.lock
 psy_data/
 inst/python/__pycache__/
+data.zip
