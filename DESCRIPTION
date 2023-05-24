@@ -14,3 +14,4 @@ Imports:
   cli, glue, reticulate, stringr, readr (>= 2.1.4)
 LinkingTo: cpp11
 SystemRequirements: C++11
+Config/testthat/edition: 3
