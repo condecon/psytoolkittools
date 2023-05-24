@@ -13,11 +13,12 @@
 #' @export
 #' @importFrom "stats" "setNames"
 #' @importFrom "utils" "read.csv"
+#' @importsFrom "glue" "glue"
 #' @examples
 load.experiment = function(experiment.file.names,label.structure, merge.dataframe = NA){
   
   #add path to experiment.file.names
-  experiment.file.names = glue::glue("psy_data\\experiment_data\\{experiment.file.names}")
+  experiment.file.names = glue::glue("psy_data/experiment_data/{experiment.file.names}")
   
   
   
