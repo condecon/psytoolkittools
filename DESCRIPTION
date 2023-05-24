@@ -6,7 +6,7 @@ Date: 2023-05-11
 Author: Jonas Engicht
 Maintainer: Jonas Engicht <dev@condecon.de>
 Description: psytoolkittools is an R-package that simplifies the usage and analysis of PsyToolkit experiments and surveys in R.
-License: MIT + file LICENSE
+License: MIT
 RoxygenNote: 7.2.3
 Suggests: 
     testthat (>= 3.0.0)
