@@ -9,8 +9,6 @@
 name: R
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
