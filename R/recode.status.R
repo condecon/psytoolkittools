@@ -11,9 +11,9 @@
 #'
 #' @examples
 recode.status = function(status_vector, correct = 1, error = 0, timeout = NA){
-  return(psytoolkittools:::recode_status_c(as.character(status_vector), 
-                                           as.character(correct), 
-                                           as.character(error), 
-                                           as.character(timeout)))
+  return(as.numeric(psytoolkittools:::recode_status_c(as.character(status_vector), 
+                                                      as.character(correct), 
+                                                      as.character(error), 
+                                                      as.character(timeout))))
 
 }
