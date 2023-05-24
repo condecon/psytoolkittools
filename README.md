@@ -1,5 +1,5 @@
 # PSYTOOLKITTOOLS
-
+[![Build, Check and Tests](https://github.com/condecon/psytoolkittools/actions/workflows/r.yml/badge.svg)](https://github.com/condecon/psytoolkittools/actions/workflows/r.yml)
 ## Installing 
 
 Because the package is currently not avaible on CRAN, you have to download it from GitHub and compile it yourself.
