@@ -6,24 +6,18 @@
 
 ## Installing 
 
-Because the package is currently not avaible on CRAN, you have to download it from GitHub and compile it yourself.
-Both can be be easily done by using the following R code.
+**Current Release**
+To install the current release, use the following R code:
 ```r
-#if devtools are not installed
-install.packages("devtools")
-
-library(devtools)
-devtools::install_github("condecon/psytoolkittools")
+install.packages("psytoolkittools", repos = "https://condecon.de/packages")
 ```
-
-**Dependecies**
-- reticulate
-- cpp11
-- cli
-- glue
-- devtools
-
-Also, RTools are required for compiling the source code.
+**Latest master branch version**
+You can also download the latest source code and compile the package yourself.
+```r
+library(devtools)
+install_github("condecon/psytoolkittools")
+```
+Please note, RTools are required for compiling the source code.
 
 ## Loading Data
 
