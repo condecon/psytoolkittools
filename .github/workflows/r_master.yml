@@ -10,10 +10,11 @@ permissions:
 
 jobs:
   build_macos:
-    runs-on: macos-latest
+    runs-on: ${{matrix.os}}
     strategy:
       matrix:
-        r-version: ['4.2.3']
+        r-version: ["4.2.2", "4.2.3"]
+        os: ["windows-latest", "macos-latest"]
 
     steps:
       - uses: actions/checkout@v3
@@ -23,13 +24,9 @@ jobs:
           r-version: ${{ matrix.r-version }}
       - name: Install dependencies
         run: |
-          install.packages(c("remotes", "devtools", "testthat", "cpp11", "decor"))
+          install.packages(c("remotes", "rcmdcheck", "testthat", "cpp11", "decor"))
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
       - name: Check
-        run: devtools::check()
-        shell: Rscript {0}
-
-      - name: Test
-        run: devtools::test()
+        run: rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "error")
         shell: Rscript {0}
