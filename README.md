@@ -1,8 +1,8 @@
 # PSYTOOLKITTOOLS
 
-[![Build master branch](https://github.com/condecon/psytoolkittools/actions/workflows/r_master.yml/badge.svg?branch=main)](https://github.com/condecon/psytoolkittools/actions/workflows/r_master.yml)
+[![Build master branch](https://github.com/condecon/psytoolkittools/actions/workflows/r_master.yml/badge.svg)](https://github.com/condecon/psytoolkittools/actions/workflows/r_master.yml)
 
-[![Build dev branch](https://github.com/condecon/psytoolkittools/actions/workflows/r_dev.yml/badge.svg?branch=dev)](https://github.com/condecon/psytoolkittools/actions/workflows/r_dev.yml)
+[![Build dev branch](https://github.com/condecon/psytoolkittools/actions/workflows/r_dev.yml/badge.svg)](https://github.com/condecon/psytoolkittools/actions/workflows/r_dev.yml)
 
 ## Installing 
 
