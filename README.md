@@ -1,5 +1,9 @@
 # PSYTOOLKITTOOLS
-[![Build, Check and Tests](https://github.com/condecon/psytoolkittools/actions/workflows/r.yml/badge.svg)](https://github.com/condecon/psytoolkittools/actions/workflows/r.yml)
+
+[![Build master branch](https://github.com/condecon/psytoolkittools/actions/workflows/r_master.yml/badge.svg?branch=main)](https://github.com/condecon/psytoolkittools/actions/workflows/r_master.yml)
+
+[![Build dev branch](https://github.com/condecon/psytoolkittools/actions/workflows/r_dev.yml/badge.svg?branch=dev)](https://github.com/condecon/psytoolkittools/actions/workflows/r_dev.yml)
+
 ## Installing 
 
 Because the package is currently not avaible on CRAN, you have to download it from GitHub and compile it yourself.
