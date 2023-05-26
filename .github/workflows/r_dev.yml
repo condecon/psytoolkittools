@@ -42,4 +42,3 @@ jobs:
       - name: Test
         run: devtools::test()
         shell: Rscript {0}
-        
