@@ -5,7 +5,7 @@
 #' The experiment data has to be located in the `psy_data/experiment_data` directory.
 #' Otherwise, loading the experiment will fail.
 #' @param experiment.file.names A vector of experiment file names 
-#' @param label.structur A vector of labels that represents the structure of the saved experiment value
+#' @param label.structure A vector of labels that represents the structure of the saved experiment value
 #' @param merge.dataframe The result of this function can be directly added to a existing data frame (e.g. survey data).
 #' The default value is NA.
 #'
