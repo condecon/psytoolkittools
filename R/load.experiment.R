@@ -17,17 +17,26 @@
 #' @examples
 load.experiment = function(experiment.file.names,label.structure, merge.dataframe = NA){
   
-  #add path to experiment.file.names
-  experiment.file.names = glue::glue("psy_data/experiment_data/{experiment.file.names}")
-  
-  
+  #if file name is not NA add path to experiment.file.names
+  experiment.file.names = ifelse(is.na(experiment.file.names), NA, glue::glue("psy_data/experiment_data/{experiment.file.names}"))
   
   d = data.frame()
   
+  #loop through experiment.file.names
   for(i in c(1:length(experiment.file.names))){
-    data.list = .read.experiment.file(experiment.file.names[i])
+    #if the current entry is NA, append NA a list of NA with the length of the
+    #label structure to the dataframe
+    if(is.na(experiment.file.names[i])){
+      list_na = rep(NA, length(label.structure))
+      d = rbind(d, list_na)
+    }
+    #if the entry is not NA,
+    #read the experiment files and append the results to the data frame
+    else{
+      data.list = .read.experiment.file(experiment.file.names[i])
+      d = rbind(d, data.list)
+    }
     
-    d = rbind(d, data.list)
   }
   
   d = setNames(d, label.structure)
