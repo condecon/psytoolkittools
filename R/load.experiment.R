@@ -13,7 +13,7 @@
 #' @export
 #' @importFrom "stats" "setNames"
 #' @importFrom "utils" "read.csv"
-#' @importsFrom "glue" "glue"
+#' @importFrom "glue" "glue"
 #' @examples
 load.experiment = function(experiment.file.names,label.structure, merge.dataframe = NA){
   

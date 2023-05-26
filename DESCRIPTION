@@ -1,8 +1,8 @@
 Package: psytoolkittools
 Type: Package
 Title: psytoolkittools - Working with PsyToolkit surveys and experiments
-Version: 0.1.0
-Date: 2023-05-11
+Version: 0.1.2
+Date: 2023-05-26
 Author: Jonas Engicht
 Maintainer: Jonas Engicht <dev@condecon.de>
 Description: psytoolkittools is an R-package that simplifies the usage and analysis of PsyToolkit experiments and surveys in R.
