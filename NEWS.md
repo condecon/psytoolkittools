@@ -1,3 +1,6 @@
+# psytoolkittools 0.1.3
+- Readme changes
+
 # psytoolkittools 0.1.2
 
 - documentation fixes
