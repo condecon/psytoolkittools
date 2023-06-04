@@ -16,3 +16,4 @@ inst/python/__pycache__/
 data.zip
 tests/testthat/..Rcheck
 ..Rcheck
+docs/

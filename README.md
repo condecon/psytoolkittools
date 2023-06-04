@@ -42,7 +42,7 @@ This functions requires two arguments:
 
 The function returns a data frame which can be combined with the survey data frame by passing it to the function.
 ```r
-load.experiment.data(experiment.file.names, label.structure, merge.dataframe = surveydata)
+load.experiment(experiment.file.names, label.structure, merge.dataframe = surveydata)
 ```
 
 # Utilities
