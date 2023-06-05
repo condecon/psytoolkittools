@@ -13,8 +13,11 @@ recode.keys(vector, keys)
 in your experiment code.}
 }
 \value{
-numeric
+character
 }
 \description{
 Recode Keys
+}
+\examples{
+recode.keys(c(1,1,2,3,5), c(1,2,3,4,"space", "none"))
 }

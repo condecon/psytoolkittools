@@ -4,14 +4,21 @@
 #' @param keys A vector of keys. Those keys have to be in the same order than
 #' in your experiment code.
 #'
-#' @return numeric
+#' @return character
 #' 
 #' @export
-#' @examples
+#' @examples 
+#' recode.keys(c(1,1,2,3,5), c(1,2,3,4,"space", "none"))
+
 recode.keys = function(vector, keys){
-  v = as.character(vector)
-  k = as.character(keys)
-  result = psytoolkittools:::recode_keys_c(v, k)
+  v <- as.character(vector)
+  k <- as.character(keys)
+  
+  for(i in c(1:length(v))){
+    #vector item i should now be the value at the position k[v[i]]
+    v[i] <- k[as.numeric(v[i])]
+  }
+  
  
-  return(result)
+  return(v)
 }
