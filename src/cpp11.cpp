@@ -5,13 +5,6 @@
 #include "cpp11/declarations.hpp"
 #include <R_ext/Visibility.h>
 
-// recode_keys_c.cpp
-cpp11::writable::strings recode_keys_c(cpp11::writable::strings vector, strings keys);
-extern "C" SEXP _psytoolkittools_recode_keys_c(SEXP vector, SEXP keys) {
-  BEGIN_CPP11
-    return cpp11::as_sexp(recode_keys_c(cpp11::as_cpp<cpp11::decay_t<cpp11::writable::strings>>(vector), cpp11::as_cpp<cpp11::decay_t<strings>>(keys)));
-  END_CPP11
-}
 // recode_status_c.cpp
 cpp11::writable::strings recode_status_c(cpp11::strings status_vector, std::string correct, std::string error, std::string timeout);
 extern "C" SEXP _psytoolkittools_recode_status_c(SEXP status_vector, SEXP correct, SEXP error, SEXP timeout) {
@@ -22,7 +15,6 @@ extern "C" SEXP _psytoolkittools_recode_status_c(SEXP status_vector, SEXP correc
 
 extern "C" {
 static const R_CallMethodDef CallEntries[] = {
-    {"_psytoolkittools_recode_keys_c",   (DL_FUNC) &_psytoolkittools_recode_keys_c,   2},
     {"_psytoolkittools_recode_status_c", (DL_FUNC) &_psytoolkittools_recode_status_c, 4},
     {NULL, NULL, 0}
 };
