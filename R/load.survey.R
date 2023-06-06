@@ -22,10 +22,6 @@ load_survey_awnsers <- function(){
 #'@return data.frame
 load.survey = function(filename){
   unzip_tool(filename)
-  
   awnsers = load_survey_awnsers()
-  #awnsers = parse_survey(awnsers)
-  
   return(awnsers)
 }
-
