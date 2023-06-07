@@ -1,10 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: sentence
-bibliography: references.bib
----
-
 # PSYTOOLKITTOOLS
 
 PsyToolkit (Stoet 2010, 2017) is a free platform for online psychological research and information.
