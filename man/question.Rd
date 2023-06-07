@@ -8,4 +8,5 @@ question()
 }
 \description{
 Question object (S3)
+This method is used for parsing the survey.txt file.
 }
