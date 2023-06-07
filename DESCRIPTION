@@ -1,7 +1,7 @@
 Package: psytoolkittools
 Type: Package
 Title: Working with PsyToolkit surveys and experiments
-Version: 0.1.4
+Version: 1.0.0
 Date: 2023-06-05
 Authors@R: person("Jonas", "Engicht", email = "dev@condecon.de", role = c("aut", "cre"), comment = c(ORCID = "0009-0002-7875-3822"))
 Description: psytoolkittools is an R-package that simplifies the usage and analysis of PsyToolkit experiments and surveys in R.
