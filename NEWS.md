@@ -1,14 +1,2 @@
-# psytoolkittools 0.1.4
-- Adding survey parser
-
-# psytoolkittools 0.1.3
-- Readme changes
-
-# psytoolkittools 0.1.2
-
-- documentation fixes
-- `load.experiment` function ca now work with NAs in the file names vector
-
-
-# psytoolkittools 0.1.0
-* Initial release
+# psytoolkittools 1.0.0
+This is the intial psytoolkittools release.
