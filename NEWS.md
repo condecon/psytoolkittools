@@ -1,3 +1,6 @@
+# psytoolkittools 0.1.4
+- Adding survey parser
+
 # psytoolkittools 0.1.3
 - Readme changes
 
