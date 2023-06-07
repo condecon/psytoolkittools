@@ -1,23 +1,20 @@
 #'parse.survey
-#'@description This function returns a survey opject that holds
-#'information on the survey
-#'@usage 
-#'survey <- parse.survey()
-#'summary(survey)
+#'@description This function returns a survey opject that holds information on the survey.
+
 #'@export
-#'
 parse.survey <- function(){
-  survey <- psytoolkittools::survey_parser()
+  survey <- survey_parser()
   
   class(survey) <- "survey"
   
   return(survey)
 }
 
-
+#' summary.survey
 #'@export
 #'@importFrom cli cli_alert_info
 #'@importFrom glue glue
+
 summary.survey <- function(survey){
   cli::cli_alert_info("Survey Information")
   

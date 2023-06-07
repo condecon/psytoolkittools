@@ -76,7 +76,6 @@ question <- function() {
 
 }
 
-#'@export
 remove.null <- function(question){
 
   #perform null checks and convert any null value to NA
@@ -102,7 +101,7 @@ remove.null <- function(question){
 }
 
 
-#'@export
+
 add.question <- function(questions, q){
   questions$label <- append(questions$label, q$label)
   questions$question <- append(questions$question, q$question)

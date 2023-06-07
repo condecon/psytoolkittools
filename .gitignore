@@ -17,3 +17,4 @@ data.zip
 tests/testthat/..Rcheck
 ..Rcheck
 docs/
+docs

@@ -4,10 +4,8 @@
 \alias{parse.survey}
 \title{parse.survey}
 \usage{
-survey <- parse.survey()
-summary(survey)
+parse.survey()
 }
 \description{
-This function returns a survey opject that holds
-information on the survey
+This function returns a survey opject that holds information on the survey.
 }
