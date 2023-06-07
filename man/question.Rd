@@ -2,10 +2,10 @@
 % Please edit documentation in R/question.R
 \name{question}
 \alias{question}
-\title{psytoolkittools question (S3)}
+\title{Question object (S3)}
 \usage{
 question()
 }
 \description{
-This method is used for parsing the survey.txt file.
+Question object (S3)
 }

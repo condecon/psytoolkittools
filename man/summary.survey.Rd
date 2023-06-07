@@ -2,10 +2,10 @@
 % Please edit documentation in R/survey.R
 \name{summary.survey}
 \alias{summary.survey}
-\title{summary.survey}
+\title{Summary function for survey objects (S3)}
 \usage{
 \method{summary}{survey}(object)
 }
 \description{
-summary.survey
+Summary function for survey objects (S3)
 }

@@ -1,4 +1,4 @@
-#'S3 object survey
+#'Survey object (S3)
 #'@export
 survey <- function(){
   s <- list()
@@ -8,7 +8,7 @@ survey <- function(){
 }
 
 
-#' summary.survey
+#' Summary function for survey objects (S3)
 #'@export
 #'@importFrom cli cli_alert_info
 #'@importFrom glue glue

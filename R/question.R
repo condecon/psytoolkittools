@@ -1,5 +1,4 @@
-#'psytoolkittools question (S3)
-#'@description This method is used for parsing the survey.txt file.
+#'Question object (S3)
 #'@export
 question <- function() {
   q <- list(

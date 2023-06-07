@@ -1,5 +1,6 @@
-#'parse.survey
+#'Parse survey file
 #'@description This function returns a survey opject that holds information on the survey.
+#'The survey data is retrieved from survey.txt
 
 #'@export
 parse.survey <- function(){
@@ -10,8 +11,6 @@ parse.survey <- function(){
 
 
 #============HIDDEN========================
-#'Hidden function for parsing survey.txt
-
 survey_parser <- function() {
   contents <- readLines("psy_data/survey.txt")
   

@@ -2,10 +2,10 @@
 % Please edit documentation in R/survey.R
 \name{survey}
 \alias{survey}
-\title{S3 object survey}
+\title{Survey object (S3)}
 \usage{
 survey()
 }
 \description{
-S3 object survey
+Survey object (S3)
 }
