@@ -1,3 +1,4 @@
+#'Hidden function for parsing survey.txt
 #'@export 
 
 survey_parser <- function() {
@@ -6,8 +7,8 @@ survey_parser <- function() {
     #remove all empty lines
     contents <- contents[contents != ""]
     
-    #create vector<questions>
-    questions <- data.frame()
+    #create questions variable
+    questions <- question()
     #create question
     q <- question()
     for(line_index in c(1:length(contents))) {
@@ -38,8 +39,10 @@ survey_parser <- function() {
       
       #check if a new questions begins by reading the nextline
       if(!is.na(contents[line_index + 1]) & startsWith(contents[line_index + 1], prefix = "l:") ){
+        #remove null values
+        q <- remove.null(q)
         #append current question to questions vector
-        questions <- rbind(questions, as.vector.question(q))
+        questions <- add.question(questions, q)
         #create new questions
         q <- question()
       }
@@ -47,11 +50,10 @@ survey_parser <- function() {
     
     }
     #add last question to vector
-    questions <- rbind(questions,as.vector.question(q))
-    
-    colnames(questions) <- c(
-      "label", "question", "option"
-    )
+    #remove null values
+    q <- remove.null(q)
+    #append current question to questions vector
+    questions <- add.question(questions, q)
 
   #return question
   return(questions)
@@ -74,10 +76,8 @@ question <- function() {
 
 }
 
-#' S3 method for converting a question to a vector
-#' @method as.vector question
-#' @export
-as.vector.question <- function(question){
+#'@export
+remove.null <- function(question){
 
   #perform null checks and convert any null value to NA
   if(is.null(question$label)){
@@ -96,9 +96,18 @@ as.vector.question <- function(question){
     question$answers <- NA
   }
   
-  #answers cannot be added to data frame because they are vectors themselves
-  vec <- c(question$label, question$question, question$option)
   
-  return(vec)
+  return(question)
   
+}
+
+
+#'@export
+add.question <- function(questions, q){
+  questions$label <- append(questions$label, q$label)
+  questions$question <- append(questions$question, q$question)
+  questions$option <- append(questions$option, q$option)
+  questions$answers <- append(questions$answers, q$answers)
+  
+  return(questions)
 }
