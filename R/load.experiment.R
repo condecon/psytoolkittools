@@ -1,20 +1,16 @@
 #' Load Experiment
 #' @description This function loads experiment data from a PsyToolkit experiment
-#' Therefore, a vector of file names and a vector of labels which represents the
-#' structure of the experiment file have to be provided.
-#' The experiment data has to be located in the `psy_data/experiment_data` directory.
-#' Otherwise, loading the experiment will fail.
-#' @param experiment.file.names A vector of experiment file names 
-#' @param label.structure A vector of labels that represents the structure of the saved experiment value
-#' @param merge.dataframe The result of this function can be directly added to a existing data frame (e.g. survey data).
-#' The default value is NA.
+#' The experiment files have to be located in the `psy_data/experiment_data` directory.
+#' @param experiment.file.names vector of experiment file names 
+#' @param label.structure vector of labels that represent the structure of a experiment data file
+#' @param merge.dataframe The result of this function can be directly added to a existing data frame (e.g. survey data). The default value is NA.
 #'
 #' @return data.frame
 #' @export
 #' @importFrom "stats" "setNames"
 #' @importFrom "utils" "read.csv"
 #' @importFrom "glue" "glue"
-#' @examples
+
 load.experiment = function(experiment.file.names,label.structure, merge.dataframe = NA){
   
   #if file name is not NA add path to experiment.file.names

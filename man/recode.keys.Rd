@@ -7,14 +7,19 @@
 recode.keys(vector, keys)
 }
 \arguments{
-\item{vector}{A vector of key values}
+\item{vector}{vector of key values}
 
-\item{keys}{A vector of keys. Those keys have to be in the same order than
+\item{keys}{vector of keys. Those keys have to be in the same order than
 in your experiment code.}
 }
 \value{
-numeric
+character
 }
 \description{
-Recode Keys
+In PsyToolkit, when saving keys, the pressed key itself is not saved instead the position in which the key was defined is saved. 
+For further analysis, it can be helpful to reverse the saved value to the name of the original key that has been pressed by the participant. 
+In this case recode.keys() can be used.
+}
+\examples{
+recode.keys(c(1,1,2,3,5), c(1,2,3,4,"space", "none"))
 }

@@ -7,17 +7,21 @@
 recode.status(status_vector, correct = 1, error = 0, timeout = NA)
 }
 \arguments{
-\item{status_vector}{Numeric vector of statuses. This vector will be recoded.}
+\item{status_vector}{numeric vector of statuses. This vector will be recoded.}
 
-\item{correct}{Numeric value which indicates a correct response.}
+\item{correct}{numeric value which indicates a correct response.}
 
-\item{error}{Numeric value which indicates an error.}
+\item{error}{numeric value which indicates an error.}
 
-\item{timeout}{Numeric value which indicates a timeout.}
+\item{timeout}{numeric value which indicates a timeout.}
 }
 \value{
 numeric
 }
 \description{
-This function recodes the status variable to custom values.
+In PsyToolkit experiments, a status of 1 represents a correct and 2 an incorrect answer. 3 represents a time out.
+With recode.status(), status codes can be recoded to custom values.
+}
+\examples{
+recode.status(vector, correct = 1, error = 0, timeout = -99)
 }
