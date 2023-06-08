@@ -1,2 +1,2 @@
 # psytoolkittools 1.0.0
-This is the intial psytoolkittools release.
+This is the initial psytoolkittools release.
