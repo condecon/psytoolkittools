@@ -2,12 +2,10 @@
 % Please edit documentation in R/question.R
 \name{question}
 \alias{question}
-\title{Question object (S3)
-This is a S3 object that represents a survey question.}
+\title{Question object (S3)}
 \usage{
 question()
 }
 \description{
-Question object (S3)
 This is a S3 object that represents a survey question.
 }
