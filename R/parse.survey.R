@@ -104,9 +104,8 @@ add.question <- function(questions, q){
   return(questions)
 }
 
-=======
 #'parse.survey
-#'@description This function returns a survey opject that holds information on the survey.
+#'@description This function returns a survey object that holds information on the survey.
 
 #'@export
 parse.survey <- function(){
@@ -117,7 +116,7 @@ parse.survey <- function(){
   return(survey)
 }
 
-#' summary.survey
+#'summary.survey
 #'@export
 #'@importFrom cli cli_alert_info
 #'@importFrom glue glue
