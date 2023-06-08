@@ -15,16 +15,18 @@ survey <- function(){
 #' @param object survey object
 #'
 #'@export
-#'@importFrom cli cli_alert_info
-#'@importFrom glue glue
+#' @importFrom cli cli_alert_info
+#' @importFrom glue glue
+#' @importFrom cli cli_h1
+#' @importFrom cli cli_h2
 
 summary.survey <- function(object){
   survey <- object
   
-  cli::cli_alert_info("Survey Information")
+  cli::cli_h1("Survey Information")
   
   for(i in c(1:length(survey$label))){
-    cat(glue::glue("Question {i}"), fill = T)
+    cli::cli_h2(glue::glue("Question {i}"))
     cat(glue::glue("Label: {survey$label[i]}"), fill = T)
     cat(glue::glue("{survey$question[i]}"), fill = T)
     cat(glue::glue("Options: {survey$option[i]}"), fill = T)
