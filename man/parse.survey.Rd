@@ -6,6 +6,10 @@
 \usage{
 parse.survey()
 }
+\value{
+survey
+}
 \description{
 This function returns a survey opject that holds information on the survey.
 The survey data is retrieved from survey.txt
+}

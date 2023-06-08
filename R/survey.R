@@ -1,5 +1,6 @@
 #'Survey object (S3)
-#'@export
+#' @describeIn summary.survey survey object
+#' @export
 survey <- function(){
   s <- list()
   class(s) <- "survey"
@@ -8,7 +9,11 @@ survey <- function(){
 }
 
 
-#' Summary function for survey objects (S3)
+#'Survey Summary
+#'@description This function gives a summary of a survey.
+#'It displays information on each question, such as label, question, and options.
+#' @param object survey object
+#'
 #'@export
 #'@importFrom cli cli_alert_info
 #'@importFrom glue glue

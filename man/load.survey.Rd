@@ -14,5 +14,5 @@ data.frame
 }
 \description{
 This functions loads the answers of a PsyToolkit survey from the specified .ZIP file.
-This file will be unzipped in the folder `psy_data`. Do not remove this folder for further use such as reading experiment data.
+This file will be unzipped into the folder `psy_data`. Do not remove this folder if you want to do further analysis on the experiment data.
 }

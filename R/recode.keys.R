@@ -1,7 +1,11 @@
 #' Recode Keys
-#'
-#' @param vector A vector of key values
-#' @param keys A vector of keys. Those keys have to be in the same order than
+#' @description
+#' In PsyToolkit, when saving keys, the pressed key itself is not saved instead the position in which the key was defined is saved. 
+#' For further analysis, it can be helpful to reverse the saved value to the name of the original key that has been pressed by the participant. 
+#' In this case recode.keys() can be used.
+#' 
+#' @param vector vector of key values
+#' @param keys vector of keys. Those keys have to be in the same order than
 #' in your experiment code.
 #'
 #' @return character
