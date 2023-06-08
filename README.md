@@ -31,7 +31,6 @@ You can also download the latest source code and compile the package yourself.
 library(devtools)
 install_github("condecon/psytoolkittools")
 ```
-
 Please note, RTools are required for compiling the source code.
 
 ## Loading Data

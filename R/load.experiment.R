@@ -10,7 +10,7 @@
 #' @importFrom "stats" "setNames"
 #' @importFrom "utils" "read.csv"
 #' @importFrom "glue" "glue"
-#' 
+
 load.experiment = function(experiment.file.names,label.structure, merge.dataframe = NA){
   
   #if file name is not NA add path to experiment.file.names
