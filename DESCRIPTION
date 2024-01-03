@@ -10,8 +10,8 @@ RoxygenNote: 7.2.3
 Suggests: 
     testthat (>= 3.0.0)
 Imports:
-    cli,
-    glue,
+    cli (>= 3.6.1),
+    glue (>= 1.6.2),
     readr (>= 2.1.4)
 LinkingTo: cpp11
 SystemRequirements: C++11
